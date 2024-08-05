@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpages.more.MoreFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_userProfilePic_MorePage"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_profile_pic"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_userName_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="admin"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_editProfile_MorePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:paddingHorizontal="24dp"
+                    android:text="@string/edit"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="4dp"
+                    style="@style/ButtonStyle" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_oval_bg_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_oval_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_rounded_corner"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/favorite_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:backgroundTint="@color/light_grey"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/iv_favorite_MorePage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/bg_profile_more_page"
+                            android:backgroundTint="@color/light_pink"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_favorite" />
+
+                        <TextView
+                            android:id="@+id/tv_favorite_MorePage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/iv_favorite_MorePage"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/favorite"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow_favorite_MorePage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_arrow_forward" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addRecipe_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:backgroundTint="@color/light_grey"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_addRecipe_MorePage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/bg_profile_more_page"
+                            android:backgroundTint="@color/light_green"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_add_recipe" />
+
+                        <TextView
+                            android:id="@+id/tv_addRecipe_MorePage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/iv_addRecipe_MorePage"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/add_recipe"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow_addRecipe_MorePage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_arrow_forward" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:backgroundTint="@color/light_grey"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_about_MorePage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/bg_profile_more_page"
+                            android:backgroundTint="@color/light_blue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_info" />
+
+                        <TextView
+                            android:id="@+id/tv_about_MorePage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/iv_about_MorePage"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/about"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow_about_MorePage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_arrow_forward" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/options"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:id="@+id/logout_MorePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:backgroundTint="@color/light_grey"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_logout_MorePage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/bg_profile_more_page"
+                            android:backgroundTint="@color/light_red"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_logout" />
+
+                        <TextView
+                            android:id="@+id/tv_logout_MorePage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@id/iv_logout_MorePage"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/logout"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow_logout_MorePage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_arrow_forward" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

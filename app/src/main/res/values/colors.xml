@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#FFF8F2</color>
+    <color name="main_color_dark">#606060</color>
+    <color name="sec_color">#FFCB9D</color> <!--#F5DEB3   #FEB17E-->
+    <color name="sec_color_dark">#4A4A4A</color>
+    <color name="bottom_nav_indicator_unchecked">#B8A391</color>
+    <color name="element_color">#FFDAB9</color>
+    <color name="menu_category_element_color_category">#FCEFE5</color>
+    <color name="menu_category_element_color_breakfast">#FADBD8</color>
+    <color name="menu_category_element_color_lunch">#F0E6EF</color>
+    <color name="menu_category_element_color_dinner">#D8CEF6</color>
+    <color name="menu_category_element_color_season">#C8E3D7</color>
+    <color name="red">#F44336</color>
+    <!-- Progress bar -->
+    <color name="grey">#979797</color>
+    <color name="max_orange">#FF9900</color>
+    <color name="center_orange">#FF760D</color>
+    <color name="min_orange">#FF5722</color>
+
+    <color name="light_grey">#EEEEEE</color>
+    <color name="light_mid_grey">#D2D2D2</color>
+    <color name="light_orange">#FFF0E4</color>
+    <color name="light_pink">#FFA8A8</color>
+    <color name="light_green">#99E39C</color>
+    <color name="light_blue">#96C9F1</color>
+    <color name="light_red">#EF7269</color>
+
+    <color name="main_orange">#FF8B31</color>
+</resources>

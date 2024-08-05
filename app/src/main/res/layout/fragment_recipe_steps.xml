@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpages.home.recipe.RecipeStepsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar_recipeSteps"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ProgressBarStyle"/>
+
+
+            <TextView
+                android:id="@+id/tv_stepTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="16dp"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView_recipeStepsPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_rounded_corner"
+                android:elevation="5dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_stepDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_setTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/set_timer"
+                android:textColor="@color/sec_color" />
+
+            <LinearLayout
+                android:id="@+id/timerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_rounded_corner"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center">
+
+
+                    <ProgressBar
+                        android:id="@+id/timerProgressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/grey_progressbar_background"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/orange_progressbar_background"
+                        android:rotation="90" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/time_left" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="00:00:00"
+                            android:textColor="@color/max_orange"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_timerAdd"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/center_orange" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_timerReset"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="64dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_restart"
+                        app:tint="@color/center_orange" />
+
+                    <ImageButton
+                        android:id="@+id/btn_timerStart"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="64dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_start"
+                        app:tint="@color/center_orange" />
+
+                    <ImageButton
+                        android:id="@+id/btn_timerPause"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="64dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_pause"
+                        android:visibility="gone"
+                        app:tint="@color/center_orange" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_stepBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:elevation="5dp"
+                    android:text="@string/back"
+                    android:textSize="18sp"
+                    style="@style/ButtonStyle"/>
+
+                <Button
+                    android:id="@+id/btn_stepNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:elevation="5dp"
+                    android:text="@string/next"
+                    android:textSize="18sp"
+                    style="@style/ButtonStyle"/>
+
+                <Button
+                    android:id="@+id/btn_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:elevation="5dp"
+                    android:text="@string/finish"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    style="@style/ButtonStyle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

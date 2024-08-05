@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpages.home.search.SearchFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <SearchView
+                android:id="@+id/searchView_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbar_background"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/search"
+                android:theme="@style/SearchViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_found_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/search_matches"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lineaLayout_nothing_found_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView_search_cat_searchPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/search_cat" />
+
+                <TextView
+                    android:id="@+id/tv_nothing_found_searchPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/nothing"
+                    android:textStyle="bold"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/tv_changeQuery_searchPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/search_nothing_found"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_searchPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                tools:listitem="@layout/rv_recommendations"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

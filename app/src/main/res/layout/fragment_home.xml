@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_homeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:parentActivityName="com.example.recipebook.MainActivity"
+    tools:context=".mainpages.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textCursorDrawable="@drawable/text_cursor_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <SearchView
+                android:id="@+id/searchView_homePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbar_background"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/search"
+                android:theme="@style/SearchViewStyle"/>
+
+            <TableRow
+                android:id="@+id/TableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_menu_category"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_corner"
+                            android:backgroundTint="@color/menu_category_element_color_category"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView_menu_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center_vertical"
+                                android:paddingStart="10dp"
+                                android:text="@string/menu_category"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imageButton_menu_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:backgroundTint="@color/menu_category_element_color_category"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/menu_category_category" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+                            android:paddingStart="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_menu_breakfast"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:backgroundTint="@color/menu_category_element_color_breakfast"
+                                android:elevation="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.25"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="10dp"
+                                    android:text="@string/menu_category_breakfast"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/imageButton_menu_breakfast"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_rounded_corner"
+                                    android:backgroundTint="@color/menu_category_element_color_breakfast"
+                                    android:scaleType="fitEnd"
+                                    android:src="@drawable/menu_category_breakfast" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_menu_lunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:backgroundTint="@color/menu_category_element_color_lunch"
+                                android:elevation="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.25"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="10dp"
+                                    android:text="@string/menu_category_lunch"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/iv_menu_lunch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_rounded_corner"
+                                    android:backgroundTint="@color/menu_category_element_color_lunch"
+                                    android:scaleType="fitEnd"
+                                    android:src="@drawable/menu_category_lunch" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_menu_dinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/bg_rounded_corner"
+                            android:backgroundTint="@color/menu_category_element_color_dinner"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                                android:gravity="center_vertical"
+                                android:paddingStart="10dp"
+                                android:text="@string/menu_category_dinner"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imageButton_menu_dinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:backgroundTint="@color/menu_category_element_color_dinner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/menu_category_dinner" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_menu_season"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_corner"
+                            android:backgroundTint="@color/menu_category_element_color_season"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:gravity="center_vertical"
+                                android:paddingStart="10dp"
+                                android:text="@string/menu_category_season"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageButton_menu_season"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="6"
+                                    android:background="@drawable/bg_rounded_corner"
+                                    android:backgroundTint="@color/menu_category_element_color_season"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/menu_category_season" />
+
+                                <ImageView
+                                    android:id="@+id/imageButton_menu_seasonArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="0"
+                                    android:background="@drawable/bg_rounded_corner"
+                                    android:backgroundTint="@color/menu_category_element_color_season"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_forward" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_banner_ai_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/TableRow1"
+                app:layout_constraintTop_toBottomOf="@id/TableRow1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/gradient"
+                    android:elevation="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout_banner_ai_recipe"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout_banner_ai_recipe"
+                    app:layout_constraintTop_toTopOf="@id/linearLayout_banner_ai_recipe">
+
+                    <ImageView
+                        android:id="@+id/imageView_banner_ai_recipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:src="@drawable/banner_ai_recipe" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:text="@string/banner_ai_recipe"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_national_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout_banner_ai_recipe"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout_banner_ai_recipe">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/national_dishes"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/listNational_Russia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_russia"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/russian_national_food" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/national_dishes_russia"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/listNational_Eng"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_UK"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/france_national_food" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/national_dishes_france"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/listNational_Italy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_italy"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/italian_national_food" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/national_dishes_italy"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/listNational_Japan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_japan"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/japan_national_food" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/national_dishes_japan"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/listNational_Germany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_germany"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/german_national_food" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:scaleType="fitCenter"
+                                android:text="@string/national_dishes_germany"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/listNational_USA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_national_recipe_USA"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_corner"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/china_national_food" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/national_dishes_china"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout_national_recipe"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout_national_recipe">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recommendations"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recom_HomePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/rv_recommendations" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_thinking_cat_no_matches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout_recommendations"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout_recommendations">
+
+                <ImageView
+                    android:id="@+id/imageView_thinking_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/thinking_cat" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/no_matches"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_idea_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/TableRow1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout_thinking_cat_no_matches"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout_thinking_cat_no_matches">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/pick_a_random_recipe"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView_idea_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/idea_cat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_random_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_corner"
+                    android:elevation="5dp"
+                    android:text="@string/random_recipe"
+                    android:textSize="18sp"
+                    style="@style/ButtonStyle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

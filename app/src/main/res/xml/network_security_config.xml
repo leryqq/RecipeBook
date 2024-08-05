@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<network-security-config xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true"
+            tools:ignore="NetworkSecurityConfig">localhost</domain>
+        <domain includeSubdomains="true"
+            tools:ignore="NetworkSecurityConfig">192.168.1.104</domain>
+        <domain includeSubdomains="true"
+            tools:ignore="NetworkSecurityConfig">127.0.0.1</domain>
+        <domain includeSubdomains="true"
+            tools:ignore="NetworkSecurityConfig">kormcraft.ddns.net</domain>
+    </domain-config>
+</network-security-config>

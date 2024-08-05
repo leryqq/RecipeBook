@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">Книга рецептов</string>
+    <!-- fragments names -->
+    <string name="fragment_list">Список</string>
+    <string name="fragment_home">Главная</string>
+    <string name="fragment_more">Опции</string>
+    <!-- HOME PAGE category names -->
+    <string name="search">Поиск</string>
+    <string name="menu_category">Категории</string>
+    <string name="menu_category_breakfast">Завтраки</string>
+    <string name="menu_category_lunch">Обеды</string>
+    <string name="menu_category_dinner">Ужины</string>
+    <string name="menu_category_season">Сезонные блюда</string>
+    <string name="banner_ai_recipe">Рецепты созданные AI</string>
+    <string name="national_dishes">Национальная кухня</string>
+    <string name="national_dishes_russia">Россия</string>
+    <string name="national_dishes_france">Франция</string>
+    <string name="national_dishes_china">Китай</string>
+    <string name="national_dishes_italy">Италия</string>
+    <string name="national_dishes_germany">Германия</string>
+    <string name="national_dishes_japan">Япония</string>
+    <!-- HOME PAGE recommends -->
+    <string name="recommendations">Рекомендуем</string>
+    <!-- random recipe -->
+    <string name="no_matches">Не нашли ничего подходящего?</string>
+    <string name="pick_a_random_recipe">Выберите один из случайных!</string>
+    <string name="random_recipe">Случайный рецепт</string>
+    <!-- SHOPLIST PAGE nothing found cat -->
+    <string name="nothing">Ничего не найдено</string>
+    <string name="add_list">Нажмите кнопку \'+\' для добавления списка</string>
+    <!-- SHOPLIST PAGE // BOTTOM SHEET ADD item -->
+    <string name="name">Название</string>
+    <string name="item_list">Продукт</string>
+    <string name="item_edit">Редактировать</string>
+    <string name="quantity">Количество</string>
+    <string name="add">Добавить</string>
+    <!-- SHOPLIST PAGE // BOTTOM SHEET EDIT item -->
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="pcs">шт</string>
+    <!-- SHOPLIST PAGE // ERROR MSG -->
+    <string name="error_quantity">Количество не является числом!</string>
+    <string name="error_empty">Не все поля заполнены!</string>
+    <!-- RECIPE PAGE -->
+    <string name="rating">Рейтинг:</string>
+    <string name="difficult">Сложность:</string>
+    <string name="description">Описание:</string>
+    <string name="cooking_time">Время готовки:</string>
+    <string name="ingredients">Ингредиенты:</string>
+    <string name="source">Источник</string>
+    <string name="start_cooking">Начать приготовление</string>
+    <!-- ALERT DIALOGS -->
+    <string name="ready_to_start">Вы готовы к приготовлению?</string>
+    <string name="ok">OK</string>
+    <string name="set_time">Установите время</string>
+    <string name="HH">Часы</string>
+    <string name="MM">Минуты</string>
+    <string name="SS">Секунды</string>
+    <string name="empty_time">Введите время!</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="cooking_done">Вы закончили приготовление!</string>
+    <string name="dont_stop">Не останавливайесь на достигнутом! В приложении есть еще много интересного!</string>
+    <string name="rate_recipe">Оцените рецепт</string>
+    <string name="rated">Оценено</string>
+    <!-- RECIPE STEPS -->
+    <string name="step_title">Шаг</string>
+    <string name="set_timer">Установить таймер</string>
+    <string name="time_left">Времени осталось:</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="finish">Завершить</string>
+    <string name="favorite_success">Добавлено в Избранные</string>
+    <string name="favorite_delete">Удалено из Избранных</string>
+    <!-- TIMER PUSH NOTIFY -->
+    <string name="notify_title">Таймер</string>
+    <string name="notify_desc">Время вышло!</string>
+    <!-- SEARCH PAGE -->
+    <string name="search_matches">По вашему запросу найдено:</string>
+    <string name="recipes_found">рецепт(ов)</string>
+    <string name="search_nothing_found">Попробуйте изменить запрос</string>
+    <!-- AUTH PAGE -->
+    <string name="login">Вход</string>
+    <string name="user_name">Имя</string>
+    <string name="email">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="password_submit">Повторите пароль</string>
+    <string name="enter">Войти</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="create_acc">Создать</string>
+    <string name="conf_politics">Соглашаюсь с <a href="http://192.168.1.104:3000/confidence_politics/confidence_politics.pdf">Политикой конфиденциальности</a></string>
+    <string name="registration_success">Вы успешно зарегистрировались!</string>
+    <!-- ERRORS -->
+    <string name="err_no_internet">Ошибка подключения: Проверьте подключение к сети Интернет.</string>
+    <string name="err_no_server_connection">Ошибка сервера: Превышено время ожидания. Попробуйте позже.</string>
+    <string name="err_unexpected">Произошла непредвиденная ошибка:</string>
+    <string name="err_fields_empty">Не все поля заполнены!</string>
+    <string name="err_invalid_email">Адрес E-mail не верный!</string>
+    <string name="err_pass_not_same">Пароли не совпадают!</string>
+    <string name="err_conf_politics">Вы не согласны с Политикой конфиденциальности</string>
+    <string name="err_duplicate_email">Пользователь с данной почтой существует!</string>
+    <string name="err_not_found">Запись не найдена</string>
+    <string name="err_invalid_old_email">Старый адрес E-mail не верный!</string>
+    <string name="err_old_pass_incorrect">Неверный пароль!</string>
+    <string name="err_empty_name">Поле Имя пустое!</string>
+    <string name="err_nothing_save">Нет изменений или не все поля заполнены</string>
+    <string name="err_name_empty">Поле Имя пустое</string>
+    <string name="err_email_empty">Поле Email пустое</string>
+    <string name="err_pass_empty">Поле изменения Пароля пустое</string>
+    <string name="err_pass_lenght">Пароль содержит менее 8 символов</string>
+    <string name="err_pass_uppercase">Пароль должен содержать хотя бы одну заглвную букву A–Z</string>
+    <string name="err_pass_lowercase">Пароль должен содержать хотя бы одну прописную букву a–z</string>
+    <string name="err_pass_digit">Пароль должен содержать хотя бы одну цифру 0–9</string>
+    <!-- MORE PAGE -->
+    <string name="edit">Редактировать</string>
+    <string name="favorite">Избранные</string>
+    <string name="add_recipe">Добавить рецепт</string>
+    <string name="about">О приложении</string>
+    <string name="options">Опции</string>
+    <string name="menu">Меню</string>
+    <string name="logout">Выйти</string>
+    <!-- FAVORITE PAGE -->
+    <string name="empty_favorites">Похоже, Вы не добавляли рецепты в Избранные</string>
+    <!-- ADD RECIPE -->
+    <string name="recipe_title">Добавьте свой рецепт!</string>
+    <string name="recipe_title_desc">Мы всегда рады вашим предложениям! Добавляя свой рецепт, Вы помогаете развивать наше приложение вместе!</string>
+    <string name="recipe_name">Название рецепта</string>
+    <string name="recipe_desc">Описание</string>
+    <string name="recipe_difficult">Сложность</string>
+    <string name="recipe_difficult_desc">Числовые значения от 1 до 5</string>
+    <string name="recipe_cooking_time">Время готовки</string>
+    <string name="recipe_cooking_time_desc">Например, 1 час 45 минут</string>
+    <string name="recipe_ingredients">Ингредиенты</string>
+    <string name="recipe_ingredients_desc">Напишите название и граммовки ингредиента (Например, Куриная грудка - 2 шт.), затем нажмите на кнопку "+" для добавления</string>
+    <string name="recipe_preview_image">Превью-изображение</string>
+    <string name="recipe_preview_image_desc">Добавьте 1 изображение из Вашей галереи. Изображение будет отображаться на карточке рецепта</string>
+    <string name="recipe_steps">Пошаговое описание</string>
+    <string name="recipe_steps_desc">Добавьте пошаговое описание рецепта. Постарайтесь разделить этапы максимально логично</string>
+    <string name="recipe_steps_ed">Описание этапов</string>
+    <string name="recipe_steps_img">Изображения для этапов</string>
+    <string name="recipe_steps_img_desc">Добавьте изображения для каждого из этапов рецепта</string>
+    <!-- ABOUT -->
+    <string name="version">Версия:</string>
+    <string name="license_agreement">Пользовательские соглашения</string>
+    <string name="about_us">О нас</string>
+    <string name="about_us_desc">\"Добро пожаловать в Книгу рецептов! Мы стремимся быть вашим надежным путеводителем в мире вкусной и разнообразной кухни. Наша цель - вдохновить вас на кулинарные эксперименты и помочь вам создавать блюда, которые радуют вас и ваших близких. Мы собираем лучшие рецепты со всего мира, делимся полезными советами и техниками приготовления, а также предлагаем интересные идеи для ваших кулинарных приключений. Присоединяйтесь к нам и открывайте новые вкусы вместе с нами!\"</string>
+    <!-- EDIT PROFILE -->
+    <string name="edit_profile">Hello blank fragment</string>
+    <string name="edit_profile_name">Редактировать имя</string>
+    <string name="profile_name">Имя</string>
+    <string name="edit_profile_email">Сменить Email</string>
+    <string name="profile_email">Старый Email</string>
+    <string name="new_profile_email">Подтвердите Email</string>
+    <string name="profile_email_ed">Новый Email</string>
+    <string name="profile_pass">Сменить пароль</string>
+    <string name="profile_new_pass">Новый пароль</string>
+    <string name="profile_new_pass_conf">Подтвердите пароль</string>
+    <string name="conf_edit">Подтвердите изменения</string>
+    <string name="conf_edit_desc">Для подтверждения изменений введите пароль от учетной записи пользователя</string>
+    <string name="success_profile_edit">Данные сохранены</string>
+</resources>
